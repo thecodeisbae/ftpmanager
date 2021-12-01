@@ -11,9 +11,9 @@ function debug($args) /** Return info about variable $args **/
 }
 
 /* Provide params */
-FTPManager::$ftpHost = 'ftpupload.net';
-FTPManager::$ftpUser = 'epiz_30483327';
-FTPManager::$ftpPassword = 'YpBfyoGcbUHOp';
+FTPManager::$ftpHost = '';
+FTPManager::$ftpUser = '';
+FTPManager::$ftpPassword = '';
 
 /* Initalize and login */
 FTPManager::init();
