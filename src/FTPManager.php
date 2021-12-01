@@ -47,7 +47,7 @@
         /**
          * This function is used to retrieve the contents of a folder in raw format
          */
-        static function rawlist($directory,$recursive = false) : array /*    */ 
+        static function rawList($directory,$recursive = false) : array /*    */ 
         {
             if(self::$ftpConnect)
             {
@@ -183,7 +183,7 @@
             if(\ftp_get(self::$ftpResource,$table[$key],$table[$key]))
                 return ['code'=>1,'message'=>'Fichier téléchargé avec succès'];
 
-            return ['code'=>0,'message'=>'Une erreur s\est produite'];
+            return ['code'=>0,'message'=>'Une erreur s\'est produite'];
         }
 
     }
