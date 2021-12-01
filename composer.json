@@ -2,19 +2,20 @@
     "name": "thecodeisbae/ftpmanager",
     "type": "library",
     "version": "v1.0.0",
-    "description": "A simple ftp manager",
-    "keywords": ["ftp", "FTP", "ftp-manager"],
-    "homepage": "https://github.com/thecodeisbae/excelToCsv",
+    "description": "FTP Manager class for easy usage",
+    "keywords": ["ftp","ftp-manager"],
+    "homepage": "https://github.com/thecodeisbae/ftpmanager.git",
     "license": "MIT",
-    "authors": [{
-        "name": "Marilyn Prince",
-        "email": "thecodeisbae@gmail.com",
-        "role": "Developer"
-    }],
-    "require": {
-        "phpoffice/phpspreadsheet": "^1.18"
-    },
+    "authors": [
+        {
+            "name": "Marilyn Prince",
+            "email": "thecodeisbae@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
-        "files": ["src/ExcelToCsv.php"]
+         "psr-4": {
+            "thecodeisbae\\FTPManager\\": "src/",
+        }
     }
 }
