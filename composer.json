@@ -15,7 +15,7 @@
     ],
     "autoload": {
          "psr-4": {
-            "thecodeisbae\\FTPManager\\": "src/",
+            "thecodeisbae\\FTPManager\\": "src/"
         }
     }
 }
