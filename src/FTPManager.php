@@ -144,9 +144,11 @@
             \ftp_chdir(self::$ftpResource,$root);
             if(\ftp_put(self::$ftpResource,$remoteFileName,$file))
             {
+                \ftp_chdir(self::$ftpResource,'/');
                 return ['code'=>1,'message'=>'Fichier envoyé avec succès','chemin'=>$root.'/'.$remoteFileName];
             }
 
+            \ftp_chdir(self::$ftpResource,'/');
             return ['code'=>0,'mesage'=>'Une erreur s\'est produite'];
         }
 
