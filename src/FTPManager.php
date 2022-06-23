@@ -122,7 +122,7 @@
 
             $table = explode('/',$path);
        
-            if(sizeof($table) != 0)
+            if(sizeof($table))
             {
                 foreach($table as $key => $value)
                 {   
@@ -163,7 +163,7 @@
             $root = '/';
             
             $table = explode('/',$filepath);
-            if(sizeof($table) != 0)
+            if(sizeof($table))
             {
                 foreach($table as $key => $value)
                 {   
